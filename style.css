@@ -1,0 +1,46 @@
+.box {
+  height: 100vh;
+  position: relative;
+}
+.text {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+
+.text:hover {
+  text-decoration: underline;
+  width: 1000px;
+  font-size: 3em;
+  left: 25%;
+}
+
+body {
+  background: linear-gradient(-40deg, blue, pink, red, green);
+  background-size: 500% 500%;
+  height: 100vh;
+  animation: example 20s ease infinite;
+}
+
+@keyframes example {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text {
+    left: 20%;
+  }
+  .text:hover {
+    text-decoration: underline;
+    font-size: smaller;
+  }
+}
